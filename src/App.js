@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { createClient } from "pexels";
 import ReactCountryFlag from "react-country-flag";
 
-const API_KEY = "//";
+const API_KEY = "c1745b6d6ac983d2ccbceff941856de0";
 
-const pexelsClient = createClient("//");
+const pexelsClient = createClient(
+  "1J1UpyltTarEOYoxb32MqUHCjqhPP89iaa1SvkPZdL8zIlkfIBZtBAxM"
+);
 
 function App() {
   const [weather, setWeather] = useState();
