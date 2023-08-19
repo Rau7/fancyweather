@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Quicksand";
+  position: relative;
+}
+
+//for header
+
+header {
+  width: 100%;
+  height: 7rem;
+  margin-top: 3.5rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  h1 {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: grey;
+      z-index: -1;
+      border-radius: 1rem;
+      opacity: 0.5;
+    }
+    padding-top: 0.7rem;
+    padding-bottom: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 4.6rem;
+    color: black;
+    text-align: center;
+    border-radius: 1.5rem;
+    border: 0.5rem solid black;
+    z-index: 1;
+  }
+}
+
+main {
+  margin-top: 7.5rem;
+  .video {
+    video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .w-card {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: grey;
+        z-index: -1;
+        border-radius: 1rem;
+        opacity: 0.7;
+      }
+      border: 0.4rem solid black;
+      padding: 0rem 1.5rem;
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+      border-radius: 1.5rem;
+      .card-heading {
+        h1 {
+          font-size: 4.6rem;
+          text-align: center;
+
+          img {
+            margin-bottom: 0.7rem;
+          }
+        }
+        .actual {
+          font-size: 4rem;
+          text-align: center;
+          font-weight: 600;
+          word-spacing: -0.8rem;
+          margin-top: 1.5rem;
+        }
+        .feels {
+          font-size: 2.4rem;
+          text-align: center;
+          margin-top: 1rem;
+          .deg {
+            word-spacing: -0.6rem;
+          }
+        }
+        .w-desc {
+          font-size: 3.2rem;
+          text-align: center;
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        border-bottom: 0.3rem solid black;
+      }
+      .card-body {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7.5rem;
+        font-size: 2.4rem;
+        ul {
+          list-style: none;
+          li {
+            margin-top: 2rem;
+            .deg {
+              word-spacing: -0.6rem;
+            }
+            .inf {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//input area
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  gap: 3rem;
+  .form-in {
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      z-index: 1;
+      border-radius: 1rem;
+      opacity: 0.7;
+    }
+    background-color: rgba($color: grey, $alpha: 0.6);
+    font-size: 2.4rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+  }
+  button {
+    background-color: black;
+    color: white;
+    font-size: 2.4rem;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: grey;
+    }
+  }
+}
